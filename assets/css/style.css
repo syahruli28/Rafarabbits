@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.snavbar-kontak{
+    width: 100%;
+    height: 30px;
+    background: #db5b20;
+    line-height: 30px;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.1);
+}
+.snavbar-kontak p{
+    color: #fff;
+    font-size: 12px;
+}
+
+/* stickyNav & Cart */
+.stickyNav{
+    position: sticky;
+    top: 0;
+    z-index: 999999;
+}
+.stickyNav{
+    background: #ffffff;
+}
+.box-scart{
+    position: relative;
+}
+.scart::after{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 20px;
+    background: #db5b20;
+    position: absolute;
+    top: -1px;
+    left: 24px;
+}
+.scart-count{
+    position: absolute;
+    top: -3px;
+    left: 33px;
+    color: #ffff;
+    z-index: 1;
+}
+.scart-count p{
+    font-size: 2px;
+}
+.scart:hover.scart::after{
+    background: #d32322;
+}
+/* stickyNav & Cart */
+
+/* image slider */
+.img-slider{
+    width: 100%;
+    height: 500px;
+    /* filter: grayscale(40%); */
+}
+/* hero */
+.hero{
+	position: relative;
+}
+.hero img{
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: 0 0px;
+}
+.headline{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-80%, -20%);
+	text-align: left;
+	text-shadow: 2px 2px 2px rgba(0,0,0,.8);
+	font-weight: bold;
+	color: #fff;
+	font-size: 36px;
+}
+.btn-orange{
+    background: #db5b20;
+    /* border: #db5b20 2px solid; */
+    border: none;
+    color: #fff;
+}
+.btn-orange:hover{
+    background: #d32322;
+    color: #fff;
+}
+/* hero */
+/* image slider */
+
+/* berita & keranjang belanja */
+.berita-text,
+.cart-shop{
+    text-align: center;
+}
+/* berita & keranjang belanja akhir*/
+
+/* footer */
+.afoot{
+    width: 100%;
+    background: #db5b20;
+    color: #fff;
+    padding: 8px;
+    font-size: 14px;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.1);
+}
+.afoot hr{
+    border-color: #fff;
+}
+.afoot a{
+    text-decoration: none;
+    color: #fff;
+}
+.ll p{
+    font-size: 12px;
+}
+/* footer akhir */
+
+/* login */
+.login a{
+    color: #fff;
+    font-size: 12px;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.1);
+    text-decoration: none;
+}
+.login a:hover{
+    color: #000000;
+}
+/* login akhir */
+
+/* MEDIA QUERIES */
+/* login */
+@media screen and (max-width: 1000px){
+    .login{
+        display: none;
+    }
+}
+/* login akhir */
